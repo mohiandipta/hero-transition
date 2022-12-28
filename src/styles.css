@@ -1,0 +1,44 @@
+.body {
+  width: 100%;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+}
+.navbar > a {
+  flex: 1 1 200px;
+  height: 20px;
+  width: 200px;
+  color: white;
+}
+.navbar > .selected {
+  color: red;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+.sldie-appear,
+.slide-enter {
+  z-index: 1;
+  left: -100%;
+}
+.slide-appear-active,
+.slide-enter.slide-enter-active {
+  left: 0px;
+  transition: left 1s ease-out;
+}
+
+.slide-exit {
+  left: 0px;
+}
+
+.slide-exit.slide-exit-active {
+  left: 0px;
+  transition: left 1s ease-out;
+}
